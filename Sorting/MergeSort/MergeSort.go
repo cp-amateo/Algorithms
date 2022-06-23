@@ -11,7 +11,6 @@ func MergeSort(list []int) []int {
 	sortedListR := MergeSort(list[middle:])
 
 	return merge(sortedListL, sortedListR)
-
 }
 
 func merge(leftList []int, rightList []int) []int {
@@ -20,14 +19,10 @@ func merge(leftList []int, rightList []int) []int {
 	leftIdx := 0
 	rightIdx := 0
 	mergeIdx := 0
-	for leftIdx < len(leftList) || rightIdx < len(rightList) {
-		if leftIdx == len(leftList) {
-			mergedList[mergeIdx] = rightList[rightIdx]
-			rightIdx += 1
-		} else if rightIdx == len(rightList) {
-			mergedList[mergeIdx] = leftList[leftIdx]
-			leftIdx += 1
-		} else if leftList[leftIdx] < rightList[rightIdx] {
+	for isBoundIndex(leftIdx, leftList) || isBoundIndex(rightIdx, rightList) {
+		if isBoundIndex(leftIdx, leftList) &&
+			(!isBoundIndex(rightIdx, rightList) ||
+				leftList[leftIdx] < rightList[rightIdx]) {
 			mergedList[mergeIdx] = leftList[leftIdx]
 			leftIdx += 1
 		} else {
@@ -39,4 +34,8 @@ func merge(leftList []int, rightList []int) []int {
 	}
 
 	return mergedList
+}
+
+func isBoundIndex(idx int, array []int) bool {
+	return idx < len(array)
 }
