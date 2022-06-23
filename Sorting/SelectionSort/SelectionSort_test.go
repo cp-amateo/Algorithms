@@ -1,11 +1,11 @@
-package MergeSort
+package SelectionSort
 
 import (
 	"reflect"
 	"testing"
 )
 
-func Test_merge_sort(t *testing.T) {
+func Test_insertion_sort(t *testing.T) {
 	tests := []struct {
 		name     string
 		arg      []int
