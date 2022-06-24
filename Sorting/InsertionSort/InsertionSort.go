@@ -4,25 +4,26 @@ func InsertionSort(slice []int) []int {
 	sliceSorted := make([]int, 0, len(slice))
 
 	for _, value := range slice {
-		if len(sliceSorted) == 0 {
-			sliceSorted = append(sliceSorted, value)
-		} else {
-			inserted := false
-			for idx2, value2 := range sliceSorted {
-				if value < value2 {
-					sliceSorted = insert(sliceSorted, idx2, value)
-					inserted = true
-					break
-				}
-			}
-			if !inserted {
-				sliceSorted = append(sliceSorted, value)
-			}
-		}
-
+		idxToInsert := findSortedPosition(sliceSorted, value)
+		sliceSorted = insert(sliceSorted, idxToInsert, value)
 	}
 
 	return sliceSorted
+}
+
+func findSortedPosition(slice []int, valueToInsert int) int {
+	if len(slice) == 0 {
+		return 0
+	}
+
+	idxToInsert := len(slice)
+	for idx, value := range slice {
+		if valueToInsert < value {
+			idxToInsert = idx
+			break
+		}
+	}
+	return idxToInsert
 }
 
 func insert(slice []int, index int, value int) []int {
