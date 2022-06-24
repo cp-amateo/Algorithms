@@ -5,7 +5,7 @@ A repo to implement common computer science algorithms in Go to gain better know
 * Sort Algorithms
   * [x] Merge Sort
   * [x] Selection Sort
-  * [ ] Insertion Sort
+  * [x] Insertion Sort
   * [ ] Quick Sort
   * [ ] Bucket Sort
   * [ ] Heap Sort
