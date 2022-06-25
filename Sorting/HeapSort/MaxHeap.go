@@ -1,4 +1,4 @@
-package MergeSort
+package HeapSort
 
 type MaxHeap struct {
 	heap []int

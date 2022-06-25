@@ -1,4 +1,4 @@
-package MergeSort
+package HeapSort
 
 func HeapSort(slice []int) []int {
 	heap := NewMaxHeap(slice)
