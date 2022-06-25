@@ -9,8 +9,9 @@ A repo to implement common computer science algorithms in Go to gain better know
   * [x] Quick Sort
   * [x] Heap Sort
 * Search Algorithms
-  * [ ] Sequential Search
-  * [ ] Interval Search
+  * [x] Sequential Search
+  * [ ] Binary Search
+  * [ ] Ternary Search
   * [ ] Jump Search
   * [ ] Interpolation Search
   * [ ] Exponential Search
@@ -19,7 +20,6 @@ A repo to implement common computer science algorithms in Go to gain better know
   * [ ] The Ubiquitous Binary Search
   * [ ] Recursive program to linearly search an element in a given array
   * [ ] Recursive function to do substring search
-  * [ ] Binary Search
   * [ ] Depth/Breadth First Search
 * Hashing
 * Exponentiation by squaring
