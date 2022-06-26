@@ -21,6 +21,8 @@ A repo to implement common computer science algorithms in Go to gain better know
   * [ ] Recursive program to linearly search an element in a given array
   * [ ] Recursive function to do substring search
   * [ ] Depth/Breadth First Search
+* Data structures
+  * [x] Heap
 * Hashing
 * Exponentiation by squaring
 
