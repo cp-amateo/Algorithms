@@ -1,4 +1,4 @@
-package HeapSort
+package heapSort
 
 import (
 	"reflect"

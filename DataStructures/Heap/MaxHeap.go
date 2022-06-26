@@ -1,7 +1,7 @@
-package HeapSort
+package Heap
 
 type MaxHeap struct {
-	heap []int
+	Heap []int
 }
 
 func NewMaxHeap(slice []int) *MaxHeap {
@@ -11,8 +11,8 @@ func NewMaxHeap(slice []int) *MaxHeap {
 }
 
 func (h *MaxHeap) BuildHeap() {
-	for i := len(h.heap) / 2; i >= 0; i-- {
-		h.Heapify(i, len(h.heap))
+	for i := len(h.Heap) / 2; i >= 0; i-- {
+		h.Heapify(i, len(h.Heap))
 	}
 }
 
@@ -21,21 +21,21 @@ func (h *MaxHeap) Heapify(rootIdx, length int) {
 	l := (rootIdx * 2) + 1
 	r := (rootIdx * 2) + 2
 
-	if l < length && h.heap[l] > h.heap[max] {
+	if l < length && h.Heap[l] > h.Heap[max] {
 		max = l
 	}
-	if r < length && h.heap[r] > h.heap[max] {
+	if r < length && h.Heap[r] > h.Heap[max] {
 		max = r
 	}
 
 	if max != rootIdx {
-		h.heap[rootIdx], h.heap[max] = h.heap[max], h.heap[rootIdx]
+		h.Heap[rootIdx], h.Heap[max] = h.Heap[max], h.Heap[rootIdx]
 		h.Heapify(max, length)
 	}
 }
 
 func (h *MaxHeap) RemoveTop(length int) {
 	lastIndex := length - 1
-	h.heap[0], h.heap[lastIndex] = h.heap[lastIndex], h.heap[0]
+	h.Heap[0], h.Heap[lastIndex] = h.Heap[lastIndex], h.Heap[0]
 	h.Heapify(0, lastIndex)
 }
