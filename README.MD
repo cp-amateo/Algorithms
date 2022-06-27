@@ -11,7 +11,7 @@ A repo to implement common computer science algorithms in Go to gain better know
 * Search Algorithms
   * [x] Sequential Search
   * [x] Binary Search
-  * [ ] Ternary Search
+  * [x] Ternary Search
   * [ ] Jump Search
   * [ ] Interpolation Search
   * [ ] Exponential Search
