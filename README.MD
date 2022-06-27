@@ -10,7 +10,7 @@ A repo to implement common computer science algorithms in Go to gain better know
   * [x] Heap Sort
 * Search Algorithms
   * [x] Sequential Search
-  * [ ] Binary Search
+  * [x] Binary Search
   * [ ] Ternary Search
   * [ ] Jump Search
   * [ ] Interpolation Search
