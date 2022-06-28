@@ -15,12 +15,6 @@ A repo to implement common computer science algorithms in Go to gain better know
   * [x] Jump Search
   * [x] Interpolation Search
   * [x] Exponential Search
-  * [ ] Sublist Search (Search a linked list in another list)
-  * [ ] Fibonacci Search
-  * [ ] The Ubiquitous Binary Search
-  * [ ] Recursive program to linearly search an element in a given array
-  * [ ] Recursive function to do substring search
-  * [ ] Depth/Breadth First Search
 * Data structures
   * [x] Heap
 * Hashing
