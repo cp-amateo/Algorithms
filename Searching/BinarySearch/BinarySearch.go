@@ -4,6 +4,10 @@ func BinarySearch(array []int, target int) int {
 	return searchInArray(array, 0, len(array)-1, target)
 }
 
+func SearchWithIndex(array []int, start int, end int, target int) int {
+	return searchInArray(array, start, end, target)
+}
+
 func searchInArray(array []int, start int, end int, target int) int {
 	if start > end ||
 		len(array) == 0 {

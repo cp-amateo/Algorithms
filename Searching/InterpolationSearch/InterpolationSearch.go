@@ -1,4 +1,4 @@
-package jumpSearch
+package interpolationSearch
 
 func InterpolationSearch(array []int, target int) int {
 	return searchInArray(array, 0, len(array)-1, target)

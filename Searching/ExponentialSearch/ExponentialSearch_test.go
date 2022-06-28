@@ -1,10 +1,10 @@
-package interpolationSearch
+package exponentialSearch
 
 import (
 	"testing"
 )
 
-func Test_interpolation_search(t *testing.T) {
+func Test_exponential_search(t *testing.T) {
 	tests := []struct {
 		name   string
 		array  []int
@@ -22,7 +22,7 @@ func Test_interpolation_search(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run(test.name, func(t *testing.T) {
-			result := InterpolationSearch(test.array, test.target)
+			result := ExponentialSearch(test.array, test.target)
 			if result != test.want {
 				t.Errorf("Search: got = %d want = %d", result, test.want)
 			}
