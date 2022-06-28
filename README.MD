@@ -12,9 +12,9 @@ A repo to implement common computer science algorithms in Go to gain better know
   * [x] Sequential Search
   * [x] Binary Search
   * [x] Ternary Search
-  * [ ] Jump Search
-  * [ ] Interpolation Search
-  * [ ] Exponential Search
+  * [x] Jump Search
+  * [x] Interpolation Search
+  * [x] Exponential Search
   * [ ] Sublist Search (Search a linked list in another list)
   * [ ] Fibonacci Search
   * [ ] The Ubiquitous Binary Search
